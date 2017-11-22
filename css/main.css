@@ -1,0 +1,276 @@
+/*
+ * Estilos de tu proyecto
+ */
+
+body  {
+  margin: 0 auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+/*tamaño de header (menú)*/
+header {
+  background: #2c3e50;
+  height: 110px;
+  position: fixed;
+  width: 100%;
+}
+
+header > nav { /*revisar porque nav se mueve al hacer la pantalla pequeña*/
+  padding-top: 50px;
+  padding-right: 105px;
+}
+
+header > nav > ul > li {
+  display: inline;
+  text-align: center;
+  padding: 10px 5px;
+
+ }
+
+header > nav > ul {
+  margin: 0 auto;
+  padding: 0;
+ }
+
+header > h1 {
+  display: inline-block;
+  height: 10px;
+  margin: 0;
+  padding-left: 10%;
+  padding-top: 30px;
+  width: 50%;
+ }
+
+/*REVISAR al hacer pequeño se ve un espacio enre secciones, porqie??*/
+/*primera seccion*/
+/*background section-1*/
+#section_1 {
+  padding-top: 110px; /*bajar la sebbion que sube cuando se pone fixed a header, hay otra forma?*/
+  height: 685px;
+  width: 100%;
+}
+
+/*centrar imagen de section-1 Portada*/
+#section_1 > img {
+  display: block;
+  margin: auto;
+  padding-top: 100px;
+}
+
+/*tamaño de texto*/
+#section_1 > h1 {
+  font-size: 80px;
+}
+
+#section_1 > h6 {
+  font-size: 30px;
+}
+
+#section_1 > div, h1, h6 {
+  margin: 30px 0;
+}
+
+hr.star-line {
+  border: 3px solid white;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 7px;
+  width: 100px;
+}
+
+hr.star-line-black {
+  border: 3px solid black;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 7px;
+  width: 100px;
+}
+
+/*segunda seccion*/
+/*tamaño de titulo*/
+
+#section_2 {
+  height: 885px;
+  width: 100%;
+}
+
+/*tamaño de imagenes de portafolio*/
+#section_2 > div > img {
+  height: 252px;
+  margin: 13px 13px;
+  width: 348px;
+}
+
+/*centrar conjunto de imagenes*/
+#section_2 > #photos {
+  height: 600px;
+  margin-bottom: 0px;
+  overflow: auto;
+  width: 100%;
+}
+
+/*tercera seccion*/
+ /*tamaño de la seccion*/
+#section_3 {
+  height: 557px;
+  width: 100%;
+}
+
+/*REVISAR CAMBIAR LOGO A POSITION QUITAR FLOATS*/
+ /*REVISAR contenido va en escalera, por?? quiens e mueve es p*/
+/*texto en columnas y centrado*/
+#section_3 > #columns {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+}
+
+#section_3 > #columns > p {
+  font-size: 20px;
+  /*line-heigh: 120%; clarito significa que no aplica el estilo??*/
+  margin: 0 0;
+}
+/*estilo de boton download*/
+#section_3 > .shape-button {
+  border-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 50px;
+  height: 50px;
+  width: 210px;
+}
+
+#section_3 > .shape-button > i {
+  padding: 15px;
+}
+
+/*cuarta seccion*/
+/*tamaño de la seccion*/
+#section_4 {
+  height: 938px;
+  width: 100%;
+}
+
+/*formulario*/
+#section_4 > #contact_form {
+  margin: 0 auto;
+  width: 55%;
+}
+
+#section_4 > #contact_form > div {
+  margin-top: 5px;
+  padding: 5px;
+  padding-bottom: 10px;
+}
+
+#section_4 > #contact_form > div > label {
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+
+#section_4 > #contact_form > div > input, textarea {
+  border: none;
+  border-bottom: 1px solid #D5DCDC;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font: 25px sans-serif;
+  margin: 0 auto;
+  width: 100%;
+}
+/*estilo y tamaño del boton*/
+#section_4 > #contact_form > div > button {
+  background-color: #18BC9C;
+  border-color: #18BC9C;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  height: 50px;
+  width: 80px;
+}
+
+/*Footer pie de página*/
+
+#foot {
+  background: #212529;
+  height: 343px;
+  width: 100%;
+}
+
+#foot > div {
+  height: 200px;
+  margin-top: 0px;
+  padding: 55px 0;
+  width: 100%;
+}
+ /*REVISAR contenido va en escalera, por??*/
+#foot > div > div {
+  display:inline-block;
+  height: 200px;
+  width: 27%;
+}
+
+#foot > div > div > h1 {
+  margin: 0;
+}
+
+#foot > p {
+  margin: 0 auto;
+}
+
+
+/*clases para estilos de letra*/
+/*investigar cambiar tipos google fonts*/
+.lato-letter {
+  font-family: 'Lato', sans-serif;
+}
+
+/*centrar texto sin div */
+.center-text {
+  text-align: center;
+}
+/*texto a mayusculas*/
+.text-uppercase {
+ text-transform: uppercase;
+}
+
+/*letra negra*/
+.black-letter {
+  color: black;
+}
+
+/*flotar elementos*/
+.float-right {
+ float: right;
+}
+
+.clear-float {
+ clear: both;
+}
+
+/*investigar como poner la primera letra mayuscula*/
+
+/*fondo verde*/
+.background-green {
+  background-color: #18bc9c;
+}
+ /*tamaño de letra y centrado titulo*/
+.font-size-space {
+  font-size: 45px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 100px;
+}
+
+/*estrella negra*/
+.black-star {
+  color: black;
+}
