@@ -26,13 +26,17 @@ header > nav > ul > li {
   display: inline;
   text-align: center;
   padding: 10px 5px;
+}
 
- }
+/*hoover menu*/
+header > nav > ul > li > a:hover {
+  color: #18BC9C;
+}
 
 header > nav > ul {
   margin: 0 auto;
   padding: 0;
- }
+}
 
 header > h1 {
   display: inline-block;
@@ -43,9 +47,26 @@ header > h1 {
   width: 50%;
  }
 
-/*REVISAR al hacer pequeño se ve un espacio enre secciones, porqie??*/
+ /*estilo estrellas decorativas*/
+ hr.star-line {
+   border: 3px solid white;
+   display: inline-block;
+   margin: 0;
+   margin-bottom: 7px;
+   width: 100px;
+ }
+
+ hr.star-line-black {
+   border: 3px solid black;
+   display: inline-block;
+   margin: 0;
+   margin-bottom: 7px;
+   width: 100px;
+ }
+
+/*REVISAR al hacer pequeño se ve un espacio enre secciones, porque??*/
 /*primera seccion*/
-/*background section-1*/
+/*background section-1 Portada*/
 #section_1 {
   padding-top: 110px; /*bajar la sebbion que sube cuando se pone fixed a header, hay otra forma?*/
   height: 685px;
@@ -72,24 +93,11 @@ header > h1 {
   margin: 30px 0;
 }
 
-hr.star-line {
-  border: 3px solid white;
-  display: inline-block;
-  margin: 0;
-  margin-bottom: 7px;
-  width: 100px;
+/*segunda seccion Portafolio*/
+/*espacio estrella y titulo*/
+#section_2 > div {
+  padding: 10px 0;
 }
-
-hr.star-line-black {
-  border: 3px solid black;
-  display: inline-block;
-  margin: 0;
-  margin-bottom: 7px;
-  width: 100px;
-}
-
-/*segunda seccion*/
-/*tamaño de titulo*/
 
 #section_2 {
   height: 885px;
@@ -111,20 +119,23 @@ hr.star-line-black {
   width: 100%;
 }
 
-/*tercera seccion*/
+/*tercera seccion Acerca*/
  /*tamaño de la seccion*/
 #section_3 {
   height: 557px;
   width: 100%;
 }
 
+#section_3 > div {
+  padding: 10px;
+}
 /*REVISAR CAMBIAR LOGO A POSITION QUITAR FLOATS*/
  /*REVISAR contenido va en escalera, por?? quiens e mueve es p*/
 /*texto en columnas y centrado*/
 #section_3 > #columns {
   width: 50%;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 20px;
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   -moz-column-count: 2; /* Firefox */
   column-count: 2;
@@ -151,10 +162,14 @@ hr.star-line-black {
 }
 
 /*cuarta seccion*/
-/*tamaño de la seccion*/
+/*tamaño de la seccion Formulario*/
 #section_4 {
   height: 938px;
   width: 100%;
+}
+
+#section_4 > div {
+  padding-top: 15px;
 }
 
 /*formulario*/
@@ -198,7 +213,6 @@ hr.star-line-black {
 }
 
 /*Footer pie de página*/
-
 #foot {
   background: #212529;
   height: 343px;
@@ -209,6 +223,7 @@ hr.star-line-black {
   height: 200px;
   margin-top: 0px;
   padding: 55px 0;
+  position: relative;
   width: 100%;
 }
  /*REVISAR contenido va en escalera, por??*/
@@ -223,9 +238,13 @@ hr.star-line-black {
 }
 
 #foot > p {
+  height: 50px;
   margin: 0 auto;
 }
 
+#foot > div > .icons-list > a > span > .circle-color {
+  color: white;
+}
 
 /*clases para estilos de letra*/
 /*investigar cambiar tipos google fonts*/
@@ -273,4 +292,11 @@ hr.star-line-black {
 /*estrella negra*/
 .black-star {
   color: black;
+}
+
+/*position absolute footer*/
+
+.position-absolute {
+  top: 35px;
+  position: absolute;
 }
